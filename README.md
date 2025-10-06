@@ -1,7 +1,7 @@
 # mohamed-webdev-iphone-design
 # 📱 iPhone 13 Pro Max Landing Page  
 
-![Banner](assets/iphone(Gold).png)
+![Banner](iphone(Gold).png)
 
 ## 📖 About the Project  
 A sleek and modern landing page for showcasing the **iPhone 13 Pro Max**.  
