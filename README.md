@@ -10,7 +10,7 @@ The design focuses on minimalism and smooth UI — perfect for product showcases
 ---
 
 ## 🌐 Live Demo  
-🔗 [View Demo](https://mohammed-004del.github.io/mohamed-webdev-project-2/)  
+🔗 [View Demo]( https://mohammed-004del.github.io/mohamed-webdev-iphone-design/)  
 
 ---
 
