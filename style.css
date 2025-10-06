@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    background: #c2a450;
+    min-height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    padding: 10px;
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    width: 50px;
+}
+.content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+.content .text{
+    color: white;
+    width: 40%;
+}
+.content .text h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+.content .text p{
+    padding: 20px 0;
+    font-size: 18px;
+}
+.content .text button{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: none;
+    transition: .3s;
+    outline: none;
+}
+.content .mainimage{
+    height: 400px;
+    margin: 0px 145px;
+}
+.imgs{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.imgs img{
+    height: 100px;
+    padding: 5px;
+    margin: 60px 0;
+    transition: .3s;
+}
+.content .text button:hover{
+    background: gold;
+    cursor: pointer;
+    letter-spacing: .3px;
+}
+.imgs img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+ul li a:hover{
+    color: gold;
+}
