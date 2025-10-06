@@ -29,7 +29,7 @@ The design focuses on minimalism, responsiveness, and smooth UI — perfect for 
 ---
 
 ## 📸 Screenshot  
-![Screenshot](assets/iphone(Gold).png)
+![Screenshot](iphone(Gold).png)
 
 ---
 
