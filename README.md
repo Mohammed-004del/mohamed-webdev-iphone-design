@@ -5,7 +5,7 @@
 
 ## 📖 About the Project  
 A sleek and modern landing page for showcasing the **iPhone 13 Pro Max**.  
-The design focuses on minimalism, responsiveness, and smooth UI — perfect for product showcases.  
+The design focuses on minimalism and smooth UI — perfect for product showcases.  
 
 ---
 
@@ -16,13 +16,13 @@ The design focuses on minimalism, responsiveness, and smooth UI — perfect for 
 
 ## 🛠️ Tech Stack  
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)  
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)  
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge) 
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
 
 ---
 
 ## 📂 Features  
-- ✅ Clean and minimal UI  
-- ✅ Responsive design (works on all devices)  
+- ✅ Clean and minimal UI   
 - ✅ Product showcase with multiple color variations  
 - ✅ Call-to-action button  
 
