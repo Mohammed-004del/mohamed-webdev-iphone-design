@@ -1,99 +1,245 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
+
 .container{
-    background: #c2a450;
-    min-height: 100%;
+    background: black;
+    min-height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 h2{
     color: white;
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: clamp(30px, 5vw, 50px);
     margin: 20px 0;
     text-transform: uppercase;
+    padding: 0 20px;
+    text-align: center;
 }
+
 header{
     width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 15px;
 }
+
 ul{
     display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
+
 ul li{
     padding: 10px;
     display: inline-block;
 }
+
 ul li a{
     text-decoration: none;
     color: white;
+    font-size: clamp(14px, 2vw, 16px);
+    transition: color 0.3s;
 }
+
+ul li a:hover{
+    color: gold;
+}
+
 .logo{
-    width: 50px;
+    width: clamp(40px, 8vw, 50px);
+    height: auto;
 }
+
 .content{
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 0;
+    padding: 60px 0;
+    gap: 40px;
+    flex-wrap: wrap;
 }
+
 .content .text{
     color: white;
-    width: 40%;
+    flex: 1;
+    min-width: 280px;
 }
+
 .content .text h1{
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 40px;
+    font-size: clamp(28px, 5vw, 40px);
+    line-height: 1.2;
 }
+
 .content .text p{
     padding: 20px 0;
-    font-size: 18px;
+    font-size: clamp(16px, 2.5vw, 18px);
+    line-height: 1.6;
 }
+
 .content .text button{
-    padding: 10px;
+    padding: 12px 25px;
     margin: 10px 0;
     border-radius: 20px;
     border: none;
     transition: .3s;
     outline: none;
+    cursor: pointer;
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 600;
 }
+
+.content .text button:hover{
+    background: gold;
+    letter-spacing: .3px;
+    transform: scale(1.05);
+}
+
 .content .mainimage{
-    height: 400px;
-    margin: 0px 145px;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain;
+    flex: 1;
+    min-width: 250px;
 }
+
 .imgs{
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
 }
+
 .imgs img{
-    height: 100px;
+    height: clamp(80px, 15vw, 100px);
+    width: auto;
     padding: 5px;
-    margin: 60px 0;
+    margin: 30px 0;
     transition: .3s;
 }
-.content .text button:hover{
-    background: gold;
-    cursor: pointer;
-    letter-spacing: .3px;
-}
+
 .imgs img:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
-ul li a:hover{
-    color: gold;
+
+/* Mobile phones - up to 480px */
+@media (max-width: 480px){
+    header{
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 0;
+    }
+
+    ul{
+        justify-content: center;
+        width: 100%;
+    }
+
+    ul li{
+        padding: 8px;
+    }
+
+    .content{
+        flex-direction: column;
+        padding: 40px 0;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .content .text{
+        width: 100%;
+        min-width: unset;
+    }
+
+    .content .mainimage{
+        width: 90%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .imgs{
+        gap: 10px;
+    }
+
+    .imgs img{
+        margin: 20px 0;
+    }
+}
+
+/* Tablets - 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px){
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    ul{
+        justify-content: center;
+    }
+
+    .content{
+        flex-direction: column;
+        padding: 50px 0;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .content .text{
+        width: 100%;
+    }
+
+    .content .mainimage{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .imgs img{
+        margin: 25px 0;
+    }
+}
+
+/* Small laptops - 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px){
+    .content{
+        padding: 60px 0;
+    }
+
+    .content .mainimage{
+        max-width: 350px;
+    }
+}
+
+/* Large screens - 1025px and up */
+@media (min-width: 1025px){
+    .content{
+        padding: 80px 0;
+    }
+
+    .content .mainimage{
+        max-width: 400px;
+    }
 }
